@@ -17,11 +17,14 @@ export default App*/
 // import PropsExample from './PropsExample'
 // import FuncPropExample from './FuncPropExample'
 
-import StateExample from "./StateExample"
+//import StateExample from "./StateExample"
+import Events from "./Events"
 function App(){
 	return(
           <div>
-			<StateExample/>
+			<h2>Events</h2>
+			<Events/>
+			{/* <StateExample/> */}
           {/* <h1>This is about props example</h1>
           <PropsExample Name="ReactJS" year="2013"/>                  
           <PropsExample Name="AngularJS" year="2008"/>
