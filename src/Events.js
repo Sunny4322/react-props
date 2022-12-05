@@ -21,7 +21,7 @@ export default class Events extends Component {
         <div>
         <input
     value={this.state.username}name="username" type="text" placeholder="user" onChange={this.handleUser}>
-       </input>
+        </input>
         <button onClick={this.handleClick}>Submit</button>
         </div>
     )

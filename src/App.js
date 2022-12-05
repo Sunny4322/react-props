@@ -1,3 +1,34 @@
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './Component/Home'
+import About from './Component/About'
+import Contact from './Component/Contact'
+import Navbar from './Component/Navbar'
+import NotFound from './Component/NotFound'
+
+function App(){
+	return(
+          <div>
+			<BrowserRouter>
+			<Navbar/>
+			<Routes>
+			<Route path='/' element={<Home/>}/>
+			<Route path='/about' element={<About/>}/>
+			<Route path='contact' element={<Contact/>}/>
+			<Route path='*'	element={<NotFound/>}/>
+			</Routes>
+			</BrowserRouter>
+			{/* <StateExample/> */}
+          {/* <h1>This is about props example</h1>
+          <PropsExample Name="ReactJS" year="2013"/>                  
+          <PropsExample Name="AngularJS" year="2008"/>
+          <PropsExample Name="VueJS" year="2017"/> */}
+		  	 {/* <FuncPropExample framework="react" number="1" /> */}
+          </div>  
+	
+		)
+}
+
+export default App
 /*import ClassComponent from './ClassComponent'
 import ClassComponent2 from './ClassComponent2'
 function App(){
@@ -18,21 +49,4 @@ export default App*/
 // import FuncPropExample from './FuncPropExample'
 
 //import StateExample from "./StateExample"
-import Events from "./Events"
-function App(){
-	return(
-          <div>
-			<h2>Events</h2>
-			<Events/>
-			{/* <StateExample/> */}
-          {/* <h1>This is about props example</h1>
-          <PropsExample Name="ReactJS" year="2013"/>                  
-          <PropsExample Name="AngularJS" year="2008"/>
-          <PropsExample Name="VueJS" year="2017"/> */}
-		  	 {/* <FuncPropExample framework="react" number="1" /> */}
-          </div>  
-	
-		)
-}
-
-export default App
+//import Events from "./Events"
